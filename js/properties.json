@@ -1,0 +1,29 @@
+{
+    "properties": [
+        {
+            "id": 101,
+            "name": "Property 1",
+            "dateOfCreation": "2023-09-23",
+            "location": "Goregaon",
+            "type": "Apartment",
+            "rent": "INR 25,000/month"
+        },
+        {
+            "id": 104,
+            "name": "Property 2",
+            "dateOfCreation": "2023-09-23",
+            "location": "Bandra",
+            "type": "Apartment",
+            "rent": "INR 50,000/month"
+        },
+        {
+            "id": 103,
+            "name": "Property 3",
+            "dateOfCreation": "2023-09-23",
+            "location": "Suburb",
+            "type": "House",
+            "rent": "$1,800/month"
+        }
+        
+    ]
+}

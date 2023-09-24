@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/spm-logo.png">
+    <title>Owner Dashboard</title>
+    <!-- Add your CSS and JavaScript includes here -->
+    <link rel="stylesheet" href="css/ownerstyle.css"> <!-- Replace with your CSS file path -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/spm-logo.png" alt="SPM Logo">
+                <h1>Owner Dashboard</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">Tenants</a></li>
+                <li><a href="login.html">Logout</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <main>
+        <section class="profile">
+            <h2>Your Profile</h2>
+            <div class="register-button-container">
+                <!-- Add this button to your HTML -->
+                <button class="register-button" onclick="openPropertyForm()">Register Property</button>
+            </div>
+            <!-- Add this form to your HTML (hidden by default) -->
+            <div id="propertyForm" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closePropertyForm()">&times;</span>
+                    <h2>Register Property</h2>
+                    <form id="registerForm">
+                        <label for="propertyName">Property Name:</label>
+                        <input type="text" id="propertyName" name="propertyName"><br>
+                    
+                        <label for="propertyLocation">Location:</label>
+                        <input type="text" id="propertyLocation" name="propertyLocation"><br>
+                    
+                        <label for="propertyType">Type:</label>
+                        <input type="text" id="propertyType" name="propertyType"><br>
+                    
+                        <label for="propertyRent">Rent:</label>
+                        <input type="text" id="propertyRent" name="propertyRent"><br>
+
+                        <label for="t_id">Tenant ID:</label>
+                        <input type="text" id="t_id" name="t_id"><br>
+
+                        <label for="t_name">Tenant Name:</label>
+                        <input type="text" id="t_name" name="t_name"><br>
+                    
+                        <button class="button" type="button" onclick="submitPropertyForm()">Submit</button>
+                        <br>
+                    </form>
+                    <br>
+                </div>
+            </div>
+            <div class="profile-info">
+                <p><strong>Name:</strong> Abhijeet </p>
+                <p><strong>Email:</strong> abhijeet@gmail.com</p>
+                <p><strong>Phone:</strong> +91 9876543210</p>
+                
+            </div>
+        </section>
+
+       
+        <section class="properties">
+            <h2>Your Properties</h2>
+           
+
+            <!-- Modal for editing property -->
+<div id="editModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Edit Property</h2>
+        <form id="editForm">
+            <!-- Form fields for editing property details -->
+            <label for="editName">Property Name:</label>
+            <input type="text" id="editName" name="editName"><br>
+
+            <label for="editLocation">Location:</label>
+            <input type="text" id="editLocation" name="editLocation"><br>
+
+            <label for="editRent">Rent:</label>
+            <input type="text" id="editRent" name="editRent"><br>
+
+            <button class="button" type="button" onclick="saveChanges()">Save</button>
+        </form>
+    </div>
+</div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Smart Property Management</p>
+    </footer>
+
+    <!-- Add your JavaScript includes here -->
+    <script src="js/scripts.js"></script> <!-- Replace with your JavaScript file path -->
+</body>
+</html>

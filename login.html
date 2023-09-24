@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <link rel="shortcut icon" href="https://img2.talentsprint.com/misc/files/img/favicon.ico"> -->
+<link rel="shortcut icon" href="images/spm-logo.png">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<style>
+	  
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-4 col-sm-8 set_height d-flex align-items-center">
+				<div class="login_section">
+					<div class="top_section text-center">
+						<img class="logo" src="images/iiit-talentsprint-blockchain-logo.png">
+					</div>
+					<div class="mt-4 ml-3">
+						<p>Project Title : Smart Property Management </p>
+						<p>Project ID : </p>
+					</div>
+					<div class="form_heading">
+						<h4>User Login</h4>
+					</div>
+					<div class="form_section">
+						<form>
+							<div class="form-group">
+								<select class="form-control" id="type">
+									<option value="broker">Owner</option>
+									<option value="owner">PMC</option>
+									<option value="tenant">Tenant</option>
+								</select>
+						</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Username" id="username">
+							</div>
+							<div class="form-group mt-25">
+								<input type="password" class="form-control" placeholder="Password" id="password">
+							</div>
+							<div class="form-group mt-25">
+								<input type="button" class="btn btn-success btn-block btn_submit" value="Login" onclick="checkLogin()">
+							</div>
+							<p class="mt-3 float-right"><small>Powered by TalentSprint</small></p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(".set_height").css({ minHeight: $(window).innerHeight() + 'px' });
+
+		function checkLogin() {
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+
+			if (username === "owner" && password === "password") {
+				window.location.href = "owner.html";
+			}else if (username === "tenant" && password === "password") {
+				window.location.href = "tenant.html";
+			}else if (username === "pmc" && password === "password") {
+				window.location.href = "pmc.html";
+			}else {
+				alert("Invalid credentials. Please try again.");
+			}
+			
+			// Add more conditions for other users if needed
+		}
+	</script>
+</body>
+</html>

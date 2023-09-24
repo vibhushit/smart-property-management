@@ -1,0 +1,333 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(44, 62, 80, 0.8);
+    color: #fff;
+    padding: 15px;
+}
+
+/* In your style.css file */
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Align items horizontally with space in between */
+    align-items: center; /* Align items vertically to the center */
+    padding: 10px 20px; /* Add padding as needed */
+}
+
+.logo {
+    display: flex; /* To align logo content horizontally */
+    align-items: center; /* Align logo content vertically to the center */
+}
+
+.logo img {
+    max-width: 50px; /* Adjust the max-width as needed */
+    height: auto;
+    margin-right: 10px; /* Add margin to separate the image from text */
+}
+
+.logo h1 {
+    color: white; /* Example text color for the logo text */
+    font-size: 24px; /* Example font size for the logo text */
+    margin: 0; /* Remove any default margin */
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f1c40f; /* Yellow color on hover */
+}
+
+/* Styles for the "Register Property" button */
+.register-button-container {
+    text-align: right; /* Align content to the right */
+    position: absolute;
+    margin-left: 680px; /* Add relative position for positioning button */
+}
+.register-button {
+   
+    top: 25px;
+    right: 15px;
+    background-color: rgba(44, 62, 80, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid #fff; /* White border */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
+
+/* Style the form container */
+#registerForm {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f456;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the form labels */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Style the form input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+.button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Main content styles */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Profile section styles */
+.profile h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.profile-info p {
+    margin: 5px 0;
+}
+
+/* Properties section styles */
+.properties h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.property {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.property h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.button{
+    background-color: #3fdb34;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for the edit form */
+#editForm {
+    
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#editForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#editForm input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#editForm .button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#editForm .button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Style the edit button */
+.edit-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-button:hover {
+    background-color: #2980b9;
+}
+
+/* Style the delete button */
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+/* Style the history button */
+.history-button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.history-button:hover {
+    background-color: #d68910;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive styles (adjust as needed) */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .nav-links li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+}
